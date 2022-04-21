@@ -1,0 +1,22 @@
+.container-cart-widget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #575e65;
+}
+
+.image-carrito{
+    display: flex;
+    align-items: center;
+}
+
+.image-carrito img {
+    height: 30px;
+}
+
+.number-count{
+    margin: 0px;
+    color: #f5deb3;
+    padding-left: 4px;
+}

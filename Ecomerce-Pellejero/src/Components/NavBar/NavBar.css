@@ -1,0 +1,52 @@
+.container-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: #343a40;
+    color: #fdefff;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-brand {
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.container-nav-bar .middle-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.middle-container .middle-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    list-style-type: none;
+    padding-left: 21px;
+    cursor: pointer;
+}
+
+.middle-list li {
+    margin: 0px 7px;
+}
+
+.end-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.end-container .hamburger-cont {
+    margin: 0px;
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 800;
+}
