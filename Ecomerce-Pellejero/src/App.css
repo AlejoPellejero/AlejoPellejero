@@ -1,3 +1,13 @@
+.container-big{
+  font-family: Roboto, sans-serif;
+}
+
+.container-items-product{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
 .App {
   text-align: center;
 }
