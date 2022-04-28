@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import ItemCount from '../ItemCount/ItemCount'
 import './Items.css';
 
 export default function Item() {
-    const [state, setState] = useState({
-        products: {},
-        value: 1
+    const [items, setItems] = useState({
+        products: {}
     });
 
     function getItems() {
@@ -172,27 +172,12 @@ export default function Item() {
     useEffect(() => {
         getItems()
             .then(res => {
-                setState({ ...state, products: res })
+                setItems({ ...items, products: res })
             })
     }, [])
 
-
-    function moreOrLessFunct(innerText, count) {
-        if (innerText === "+") {
-            setState({
-                value: count + 1
-            })
-        } else {
-            if (count >= 1) {
-                setState({
-                    value: count - 1
-                })
-            } else {
-                setState({
-                    value: count
-                })
-            }
-        }
+    const handleOnAdd = (cant) => {
+        console.log("Agregaste al carrito : ", cant)
     }
 
     return (
@@ -202,12 +187,7 @@ export default function Item() {
             </div>
             <h2 className='item-name'>product name</h2>
             <h3 className='item-price'>$200</h3>
-            <div className='container-contador'>
-                <span className='general-span span-less' onClick={(e) => moreOrLessFunct(e.target.innerText, state.value)}>-</span>
-                <input value={state.value} className='input-count' name="count" readOnly />
-                <span className='general-span span-plus' onClick={(e) => moreOrLessFunct(e.target.innerText, state.value)}>+</span>
-            </div>
-            <button className='button-add-to-cart'>Add to cart</button>
+            <ItemCount stock={5} initial={1} onAdd={handleOnAdd} />
         </div>
     );
 }
