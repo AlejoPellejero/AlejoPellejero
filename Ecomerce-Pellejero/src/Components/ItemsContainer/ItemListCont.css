@@ -3,3 +3,10 @@
     text-align: center;
     padding: 5px 0px;
 }
+
+.container-items-product{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
