@@ -2,12 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px;
     margin-top: 21px;
+    transition: background-color 2s;
+}
+
+.first-big-item:hover{
+    background-color: #b698ba;
 }
 
 .image-item{
     display: flex;
+    cursor: pointer;
 }
 
 .image-item img{
@@ -18,14 +24,14 @@
 .item-name{
     display: flex;
     margin: 0px;
-    padding: 10px 0px;
+    padding-top: 10px;
 }
 
 .item-price{
     margin: 0px;
     display: flex;
-    padding-bottom: 21px;
-    color: #666666;
+    padding: 14px 0px;
+    color: #f5deb3;
 }
 
 .container-contador{

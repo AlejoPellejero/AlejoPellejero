@@ -1,7 +1,14 @@
+.items-container{
+    background-color: #fdefff;
+}
+
 .items-container .item-h1{
     margin: 0px;
     text-align: center;
-    padding: 5px 0px;
+    padding: 10px 0px;
+    font-family: 'Water Brush', cursive;
+    font-weight: 800;
+    font-size: 40px;
 }
 
 .container-items-product{

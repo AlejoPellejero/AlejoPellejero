@@ -1,0 +1,10 @@
+.item-detail-container{
+    background-color: #343a40;
+    width: 720px;
+    height: 480px;
+    border-radius: 6px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 9999;
+    top: 190px;
+}
