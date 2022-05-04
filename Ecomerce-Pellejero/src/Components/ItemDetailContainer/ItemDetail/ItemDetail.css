@@ -1,0 +1,29 @@
+.item-detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-detail{
+    display: flex;
+}
+
+.first-detail img{
+    width: 300px;
+    display: flex;
+    border-radius: 6px 0px;
+}
+
+.title-desc{
+    margin: 0px;
+    color: white;
+    padding: 0px 10px 2px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.description{
+    margin: 0px;
+    font-size: 17px;
+    padding: 0px 10px;
+}

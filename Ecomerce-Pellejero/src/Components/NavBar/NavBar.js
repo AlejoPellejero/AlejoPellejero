@@ -11,7 +11,8 @@ function NavBar() {
                 <div className='middle-container'>
                     <ul className='middle-list'>
                         <li>Home</li>
-                        <li>Shop</li>
+                        <li>Cuadros</li>
+                        <li>Otros</li>
                         <li>About-us</li>
                     </ul>
                 </div>

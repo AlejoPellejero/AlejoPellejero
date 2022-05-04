@@ -9,10 +9,10 @@ export default function Item({data}) {
     return (
         <div className='first-big-item'>
             <div className='image-item'>
-                <img src={data.img} alt="imagen del producto" />
+                <img src={data.img} alt="imagen del producto"/>
             </div>
             <h2 className='item-name'>{data.name}</h2>
-            <h3 className='item-price'>{data.price}</h3>
+            <h3 className='item-price'>${data.price}</h3>
             <ItemCount stock={5} initial={1} onAdd={handleOnAdd} />
         </div>
     );
