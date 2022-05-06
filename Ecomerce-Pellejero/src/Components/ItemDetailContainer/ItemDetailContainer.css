@@ -1,10 +1,10 @@
 .item-detail-container{
     background-color: #343a40;
-    width: 720px;
-    height: 480px;
-    border-radius: 6px;
+    width: 880px;
+    border-radius: 4px;
     position: relative;
     margin: 0 auto;
     z-index: 9999;
-    top: 190px;
+    margin-top: 130px;
+    box-shadow: 10px 20px 14px 1px;
 }

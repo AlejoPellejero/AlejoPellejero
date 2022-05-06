@@ -5,7 +5,7 @@ import './ItemListCont.css';
 function ItemListCont(props) {
     const [itemState, setItems] = useState({
         products: []
-    });
+    });    
 
     function getItems() {
         const itemsJson = [
@@ -14,7 +14,7 @@ function ItemListCont(props) {
                 name: 'Cuadro Cult',
                 price: 300,
                 stock: 5,
-                img: 'https://actionbmxshop.net/7515-large_default/cuadro-angie-hawk.jpg'
+                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPY--SPjoZHn250iPEuXGywO2S5P57GUOJ0m0fgudVErKabhP2FYh9Uwgf3J0YZ5m2Z8&usqp=CAU'
             },
             {
                 id: 2,
