@@ -1,3 +1,8 @@
+a{
+    color: #fdefff;
+    text-decoration: none;
+}
+
 .container-nav-bar {
     display: flex;
     align-items: center;

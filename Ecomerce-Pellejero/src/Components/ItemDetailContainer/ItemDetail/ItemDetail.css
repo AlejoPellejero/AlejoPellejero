@@ -1,7 +1,13 @@
+h3{
+    margin: 0px;
+    padding: 5px 0px;
+}
+
 .item-detail{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .first-detail{
@@ -11,15 +17,67 @@
 .first-detail img{
     width: 300px;
     display: flex;
-    border-radius: 6px 0px;
+    border-radius: 5px;
 }
 
 .title-desc{
     margin: 0px;
-    color: white;
+    color: #fdefff;
     padding: 0px 10px 2px;
     font-size: 30px;
     font-weight: 800;
+}
+
+.select-type{
+    margin-left: 6px;
+    height: 40px;
+    background-color: #fdefff;
+    border: none;
+    cursor: pointer;
+}
+
+.container-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.button-buy{
+    height: 70px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: #f5deb3;
+    cursor: pointer;
+    border: none;
+    color: #fdefff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.button-add{
+    height: 70px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: #fdefff;
+    cursor: pointer;
+    border: none;
+    color: #f5deb3;
+}
+
+.title{
+    margin: 0px;
+    text-align: center;
+    color: #fdefff;
+}
+
+.price{
+    margin: 0px;
+    color:#f5deb3;
+}
+
+.bottom-detail{
+    margin: 10px 0px;
 }
 
 .description{

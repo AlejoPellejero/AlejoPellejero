@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetailContainer/ItemDetail/ItemDetail'
 import './ItemDetailContainer.css';
 
@@ -6,6 +7,8 @@ function ItemDetailContainer(props) {
     const [detailState, setDetail] = useState({
         item: []
     });
+
+    const { categoryId } = useParams();
 
     function getDetails() {
         const detailsJson = [
@@ -135,21 +138,29 @@ function ItemDetailContainer(props) {
                 resolve(detailsJson);
             }, 2000)
         });
-        console.log(detailsJson)
+
         return myPromise
     }
 
     useEffect(() => {
         getDetails()
-            .then(res => {
-                setDetail({ item: res })
+            .then(itemList => {                                
+                for (let index = 0; index < itemList.length; index++) {
+                    let itemId = itemList[index].id;
+                    if (itemId.toString() == categoryId) {
+                        setDetail({ item: itemList[index] })
+                    } else {
+                        console.log("No existe este item")
+                    }
+
+                }
             })
     }, [])
 
 
     return (
         <div className='item-detail-container'>
-            <ItemDetail detail={detailState.item}/>
+            <ItemDetail detail={detailState.item} />
         </div>
     );
 }
