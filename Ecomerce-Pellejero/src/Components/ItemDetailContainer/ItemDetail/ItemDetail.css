@@ -56,13 +56,20 @@ h3{
 }
 
 .button-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 70px;
-    font-size: 25px;
-    font-weight: 800;
     background-color: #fdefff;
     cursor: pointer;
     border: none;
     color: #f5deb3;
+}
+
+.end-buy-text{
+    margin: 0px;
+    font-weight: 800;
+    font-size: 25px;
 }
 
 .title{

@@ -11,8 +11,8 @@ function GeneralPage() {
       <NavBar />
       <Routes>
         <Route path="/" element={<ItemListCont greetings='Welcome to our Shop' />} />
-        <Route path="/category/:id" element={<ItemListCont greetings='Welcome to our Shop' />} />
-        <Route path="/item/:categoryId" element={<ItemDetailContainer />} />        
+        <Route path="/category/:categoryId" element={<ItemListCont greetings='Welcome to our Shop' />} />
+        <Route path="/item/:productId" element={<ItemDetailContainer />} />        
       </Routes>
     </BrowserRouter>
   );
