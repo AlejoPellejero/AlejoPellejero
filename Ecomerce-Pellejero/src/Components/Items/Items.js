@@ -16,7 +16,7 @@ export default function Item({ data }) {
             </div>
             <h2 className='item-name'>{data.name}</h2>
             <h3 className='item-price'>${data.price}</h3>
-            <ItemCount stock={5} initial={1} onAdd={handleOnAdd} />
+            <ItemCount stock={data.stock} initial={1} onAdd={handleOnAdd} />
         </div>
     );
 }
