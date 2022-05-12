@@ -39,11 +39,13 @@ export default function ItemDetail({ initialCount, detail }) {
                             <option className='option' value="5">5 unidades</option>
                         </select>
                     </h3>
-                    <Count stock={detail.stock} initial={1} onSet={(value) => getValueAndSet(value)} />
-                    <button className='button-buy'>Agregar al carrito</button>
-                    <Link className='button-add' to={`/cart/${detail.id}`}>
-                        <h1 className='end-buy-text'>Finalizar Compra</h1>
-                    </Link>
+                    {count.value === 0
+                        ? <Count stock={detail.stock} initial={1} addToCart={true} onSet={(value) => getValueAndSet(value)} />
+                        : <Link className='button-add' to={`/cart`}>
+                            <h1 className='end-buy-text'>Finalizar Compra</h1>
+                        </Link>
+
+                    }
                 </div>
             </div>
             <div className='bottom-detail'>
